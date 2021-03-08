@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="316.0" y="189.0">RapSong</node>
+    <node x="431.25" y="0.0">Composition</node>
+    <node x="394.5357142857143" y="368.0">DiskBuilder</node>
+    <node x="709.0" y="201.0">ClassicComposition</node>
+    <node x="532.0" y="189.0">RockSong</node>
+    <node x="0.0" y="213.0">Disk</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="ClassicComposition" target="Composition">
+      <point x="0.0" y="-52.5" />
+      <point x="833.0" y="159.0" />
+      <point x="552.75" y="159.0" />
+      <point x="40.5" y="64.5" />
+    </edge>
+    <edge source="DiskBuilder" target="Disk">
+      <point x="-81.0" y="-28.0" />
+      <point x="475.5357142857143" y="343.0" />
+      <point x="148.0" y="343.0" />
+      <point x="0.0" y="40.5" />
+    </edge>
+    <edge source="Disk" target="Composition">
+      <point x="-74.0" y="-40.5" />
+      <point x="74.0" y="149.0" />
+      <point x="444.75" y="149.0" />
+      <point x="-67.5" y="64.5" />
+    </edge>
+    <edge source="RockSong" target="Composition">
+      <point x="0.0" y="-64.5" />
+      <point x="610.5" y="169.0" />
+      <point x="525.75" y="169.0" />
+      <point x="13.5" y="64.5" />
+    </edge>
+    <edge source="RapSong" target="Composition">
+      <point x="0.0" y="-64.5" />
+      <point x="414.0" y="169.0" />
+      <point x="498.75" y="169.0" />
+      <point x="-13.5" y="64.5" />
+    </edge>
+    <edge source="DiskBuilder" target="Composition">
+      <point x="81.0" y="-28.0" />
+      <point x="637.5357142857142" y="343.0" />
+      <point x="967.5" y="343.0" />
+      <point x="967.5" y="149.0" />
+      <point x="579.75" y="149.0" />
+      <point x="67.5" y="64.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.2000000000000002" x="484.0" y="212.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="316.20535714285717" y="0.0">FileSystemItem</node>
+    <node x="402.1904761904762" y="442.0">FileSystemClient</node>
+    <node x="365.0" y="238.0">File</node>
+    <node x="0.0" y="238.0">Directory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Directory" target="FileSystemItem">
+      <point x="-115.0" y="-77.0" />
+      <point x="57.5" y="198.0" />
+      <point x="334.1339285714286" y="198.0" />
+      <point x="-107.57142857142856" y="89.0" />
+    </edge>
+    <edge source="FileSystemClient" target="Directory">
+      <point x="-103.0" y="-77.5" />
+      <point x="453.6904761904762" y="417.0" />
+      <point x="172.5" y="417.0" />
+      <point x="0.0" y="77.0" />
+    </edge>
+    <edge source="FileSystemClient" target="FileSystemItem">
+      <point x="103.0" y="-77.5" />
+      <point x="659.6904761904761" y="417.0" />
+      <point x="637.5" y="417.0" />
+      <point x="637.5" y="198.0" />
+      <point x="549.2767857142858" y="198.0" />
+      <point x="107.57142857142861" y="89.0" />
+    </edge>
+    <edge source="File" target="FileSystemItem">
+      <point x="-62.75" y="-77.0" />
+      <point x="427.75" y="218.0" />
+      <point x="441.70535714285717" y="218.0" />
+      <point x="0.0" y="89.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="293.0" y="265.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

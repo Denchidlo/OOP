@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="447.5" y="12.0">ISortStrategy</node>
+    <node x="0.0" y="190.5">BubbleSort</node>
+    <node x="928.0" y="178.5">OrderedSearch</node>
+    <node x="158.0" y="166.5">QuickSort</node>
+    <node x="872.528125" y="0.0">ISearchStrategy</node>
+    <node x="661.0" y="130.0">ModelSelector</node>
+    <node x="406.0" y="166.5">MergeSort</node>
+    <node x="1100.0" y="178.5">UnorderedSearch</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="OrderedSearch" target="ISearchStrategy">
+      <point x="0.0" y="-40.0" />
+      <point x="1004.0" y="110.0" />
+      <point x="977.528125" y="110.0" />
+      <point x="21.0" y="40.0" />
+    </edge>
+    <edge source="UnorderedSearch" target="ISearchStrategy">
+      <point x="0.0" y="-40.0" />
+      <point x="1184.0" y="110.0" />
+      <point x="1019.528125" y="110.0" />
+      <point x="63.0" y="40.0" />
+    </edge>
+    <edge source="ModelSelector" target="ISearchStrategy">
+      <point x="30.875" y="-88.5" />
+      <point x="815.375" y="100.0" />
+      <point x="893.528125" y="100.0" />
+      <point x="-63.0" y="40.0" />
+    </edge>
+    <edge source="ModelSelector" target="ISortStrategy">
+      <point x="-92.625" y="-88.5" />
+      <point x="691.875" y="110.0" />
+      <point x="553.9" y="110.0" />
+      <point x="30.399999999999977" y="28.0" />
+    </edge>
+    <edge source="MergeSort" target="ISortStrategy">
+      <point x="0.0" y="-52.0" />
+      <point x="0.0" y="28.0" />
+    </edge>
+    <edge source="BubbleSort" target="ISortStrategy">
+      <point x="0.0" y="-28.0" />
+      <point x="69.0" y="100.0" />
+      <point x="462.7" y="100.0" />
+      <point x="-60.80000000000001" y="28.0" />
+    </edge>
+    <edge source="QuickSort" target="ISortStrategy">
+      <point x="0.0" y="-52.0" />
+      <point x="272.0" y="110.0" />
+      <point x="493.1" y="110.0" />
+      <point x="-30.399999999999977" y="28.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="585.0" y="300.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

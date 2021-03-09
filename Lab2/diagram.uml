@@ -3,66 +3,158 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="447.5" y="12.0">ISortStrategy</node>
-    <node x="0.0" y="190.5">BubbleSort</node>
-    <node x="928.0" y="178.5">OrderedSearch</node>
-    <node x="158.0" y="166.5">QuickSort</node>
-    <node x="872.528125" y="0.0">ISearchStrategy</node>
-    <node x="661.0" y="130.0">ModelSelector</node>
-    <node x="406.0" y="166.5">MergeSort</node>
-    <node x="1100.0" y="178.5">UnorderedSearch</node>
+    <node x="252.81304824561403" y="150.0">Task</node>
+    <node x="337.4747807017544" y="835.0">CompleteTaskState</node>
+    <node x="454.4747807017544" y="705.0">SendTaskState</node>
+    <node x="0.0" y="315.0">RecievedTaskState</node>
+    <node x="571.4747807017544" y="315.0">AcceptedTaskState</node>
+    <node x="103.47478070175441" y="445.0">RejectedTaskState</node>
+    <node x="448.5838815789474" y="0.0">TaskState</node>
+    <node x="337.4747807017544" y="575.0">CheckedTaskState</node>
   </nodes>
   <notes />
   <edges>
-    <edge source="OrderedSearch" target="ISearchStrategy">
+    <edge source="CheckedTaskState" target="Task">
+      <point x="-26.625" y="-40.0" />
+      <point x="417.3497807017544" y="295.0" />
+      <point x="379.9797149122807" y="295.0" />
+      <point x="18.166666666666686" y="52.5" />
+    </edge>
+    <edge source="CompleteTaskState" target="TaskState">
+      <point x="79.875" y="-40.0" />
+      <point x="523.8497807017544" y="815.0" />
+      <point x="823.6217105263158" y="815.0" />
+      <point x="823.6217105263158" y="100.0" />
+      <point x="648.2713815789474" y="100.0" />
+      <point x="93.1875" y="40.0" />
+    </edge>
+    <edge source="CheckedTaskState" target="RejectedTaskState">
+      <point x="-79.875" y="-40.0" />
+      <point x="364.0997807017544" y="555.0" />
+      <point x="209.9747807017544" y="555.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="SendTaskState" target="Task">
+      <point x="-2.8421709430404007E-14" y="-40.0" />
+      <point x="560.9747807017544" y="285.0" />
+      <point x="416.313048245614" y="285.0" />
+      <point x="54.5" y="52.5" />
+    </edge>
+    <edge source="CheckedTaskState" target="AcceptedTaskState">
+      <point x="26.625" y="-40.0" />
+      <point x="470.5997807017544" y="545.0" />
+      <point x="677.9747807017544" y="545.0" />
+      <point x="0.0" y="40.0" />
+    </edge>
+    <edge source="AcceptedTaskState" target="Task">
+      <point x="-53.25" y="-40.0" />
+      <point x="624.7247807017544" y="275.0" />
+      <point x="452.64638157894734" y="275.0" />
+      <point x="90.83333333333331" y="52.5" />
+    </edge>
+    <edge source="RecievedTaskState" target="TaskState">
+      <point x="-53.25" y="-40.0" />
+      <point x="53.25" y="100.0" />
+      <point x="461.8963815789474" y="100.0" />
+      <point x="-93.1875" y="40.0" />
+    </edge>
+    <edge source="RejectedTaskState" target="RecievedTaskState">
+      <point x="-71.0" y="-40.0" />
+      <point x="138.9747807017544" y="420.0" />
+      <point x="159.75" y="420.0" />
+      <point x="53.25" y="40.0" />
+    </edge>
+    <edge source="RejectedTaskState" target="TaskState">
       <point x="0.0" y="-40.0" />
-      <point x="1004.0" y="110.0" />
-      <point x="977.528125" y="110.0" />
-      <point x="21.0" y="40.0" />
+      <point x="209.9747807017544" y="420.0" />
+      <point x="223.5" y="420.0" />
+      <point x="223.5" y="110.0" />
+      <point x="488.5213815789474" y="110.0" />
+      <point x="-66.5625" y="40.0" />
     </edge>
-    <edge source="UnorderedSearch" target="ISearchStrategy">
-      <point x="0.0" y="-40.0" />
-      <point x="1184.0" y="110.0" />
-      <point x="1019.528125" y="110.0" />
-      <point x="63.0" y="40.0" />
+    <edge source="CheckedTaskState" target="TaskState">
+      <point x="79.875" y="-40.0" />
+      <point x="523.8497807017544" y="555.0" />
+      <point x="794.9747807017544" y="555.0" />
+      <point x="794.9747807017544" y="120.0" />
+      <point x="595.0213815789474" y="120.0" />
+      <point x="39.9375" y="40.0" />
     </edge>
-    <edge source="ModelSelector" target="ISearchStrategy">
-      <point x="30.875" y="-88.5" />
-      <point x="815.375" y="100.0" />
-      <point x="893.528125" y="100.0" />
-      <point x="-63.0" y="40.0" />
+    <edge source="CompleteTaskState" target="SendTaskState">
+      <point x="26.625" y="-40.0" />
+      <point x="470.5997807017544" y="805.0" />
+      <point x="560.9747807017544" y="805.0" />
+      <point x="0.0" y="40.0" />
     </edge>
-    <edge source="ModelSelector" target="ISortStrategy">
-      <point x="-92.625" y="-88.5" />
-      <point x="691.875" y="110.0" />
-      <point x="553.9" y="110.0" />
-      <point x="30.399999999999977" y="28.0" />
+    <edge source="AcceptedTaskState" target="TaskState">
+      <point x="53.25" y="-40.0" />
+      <point x="731.2247807017544" y="130.0" />
+      <point x="568.3963815789474" y="130.0" />
+      <point x="13.3125" y="40.0" />
     </edge>
-    <edge source="MergeSort" target="ISortStrategy">
-      <point x="0.0" y="-52.0" />
-      <point x="0.0" y="28.0" />
+    <edge source="RecievedTaskState" target="CompleteTaskState">
+      <point x="-53.25" y="40.0" />
+      <point x="53.25" y="815.0" />
+      <point x="364.0997807017544" y="815.0" />
+      <point x="-79.875" y="-40.0" />
     </edge>
-    <edge source="BubbleSort" target="ISortStrategy">
-      <point x="0.0" y="-28.0" />
-      <point x="69.0" y="100.0" />
-      <point x="462.7" y="100.0" />
-      <point x="-60.80000000000001" y="28.0" />
+    <edge source="SendTaskState" target="CheckedTaskState">
+      <point x="-71.00000000000003" y="-40.0" />
+      <point x="489.9747807017544" y="680.0" />
+      <point x="443.9747807017544" y="680.0" />
+      <point x="0.0" y="40.0" />
     </edge>
-    <edge source="QuickSort" target="ISortStrategy">
-      <point x="0.0" y="-52.0" />
-      <point x="272.0" y="110.0" />
-      <point x="493.1" y="110.0" />
-      <point x="-30.399999999999977" y="28.0" />
+    <edge source="RecievedTaskState" target="Task">
+      <point x="53.25" y="-40.0" />
+      <point x="159.75" y="285.0" />
+      <point x="270.97971491228066" y="285.0" />
+      <point x="-90.83333333333334" y="52.5" />
+    </edge>
+    <edge source="Task" target="TaskState">
+      <point x="-54.5" y="-52.5" />
+      <point x="307.313048245614" y="120.0" />
+      <point x="515.1463815789474" y="120.0" />
+      <point x="-39.9375" y="40.0" />
+    </edge>
+    <edge source="TaskState" target="Task">
+      <point x="-13.3125" y="40.0" />
+      <point x="541.7713815789474" y="130.0" />
+      <point x="416.313048245614" y="130.0" />
+      <point x="54.5" y="-52.5" />
+    </edge>
+    <edge source="SendTaskState" target="TaskState">
+      <point x="70.99999999999997" y="-40.0" />
+      <point x="631.9747807017544" y="680.0" />
+      <point x="805.9747807017544" y="680.0" />
+      <point x="805.9747807017544" y="110.0" />
+      <point x="621.6463815789474" y="110.0" />
+      <point x="66.5625" y="40.0" />
+    </edge>
+    <edge source="CompleteTaskState" target="Task">
+      <point x="-26.625" y="-40.0" />
+      <point x="417.3497807017544" y="805.0" />
+      <point x="326.9747807017544" y="805.0" />
+      <point x="326.9747807017544" y="295.0" />
+      <point x="343.64638157894734" y="295.0" />
+      <point x="-18.166666666666686" y="52.5" />
+    </edge>
+    <edge source="RejectedTaskState" target="Task">
+      <point x="71.0" y="-40.0" />
+      <point x="280.9747807017544" y="420.0" />
+      <point x="267.1217105263158" y="420.0" />
+      <point x="267.1217105263158" y="295.0" />
+      <point x="307.313048245614" y="295.0" />
+      <point x="-54.5" y="52.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="585.0" y="300.5" />
+  <settings layout="Hierarchic Group" zoom="1.0" x="582.0" y="487.0" />
   <SelectedNodes />
   <Categories>
-    <Category>Inner Classes</Category>
-    <Category>Properties</Category>
-    <Category>Methods</Category>
     <Category>Constructors</Category>
     <Category>Fields</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
   </Categories>
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>

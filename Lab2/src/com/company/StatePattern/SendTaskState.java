@@ -1,3 +1,5 @@
+package com.company.StatePattern;
+
 public class SendTaskState implements TaskState {
     @Override
     public void getNewState(Task task) {
@@ -6,6 +8,6 @@ public class SendTaskState implements TaskState {
 
     @Override
     public void getStateInfo() {
-        System.out.println("Task was send!");
+        System.out.println("com.company.StatePattern.Task was send!");
     }
 }

@@ -1,3 +1,5 @@
+package com.company.StatePattern;
+
 import java.util.Random;
 
 public class CheckedTaskState implements TaskState {
@@ -12,6 +14,6 @@ public class CheckedTaskState implements TaskState {
 
     @Override
     public void getStateInfo() {
-        System.out.println("Task was checked!");
+        System.out.println("com.company.StatePattern.Task was checked!");
     }
 }

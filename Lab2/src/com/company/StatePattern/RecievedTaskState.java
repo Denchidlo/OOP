@@ -1,3 +1,5 @@
+package com.company.StatePattern;
+
 public class RecievedTaskState implements TaskState {
 
     @Override
@@ -7,6 +9,6 @@ public class RecievedTaskState implements TaskState {
 
     @Override
     public void getStateInfo() {
-        System.out.println("Task was received!");
+        System.out.println("com.company.StatePattern.Task was received!");
     }
 }

@@ -1,3 +1,5 @@
+package com.company.StatePattern;
+
 public class Task {
     TaskState currentState;
 

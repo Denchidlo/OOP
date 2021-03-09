@@ -1,4 +1,6 @@
-public class CompleteTaskState implements TaskState{
+package com.company.StatePattern;
+
+public class CompleteTaskState implements TaskState {
     @Override
     public void getNewState(Task task) {
         task.currentState  = new SendTaskState();
@@ -6,6 +8,6 @@ public class CompleteTaskState implements TaskState{
 
     @Override
     public void getStateInfo() {
-        System.out.println("Task was complete!");
+        System.out.println("com.company.StatePattern.Task was complete!");
     }
 }

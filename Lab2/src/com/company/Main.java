@@ -1,4 +1,7 @@
-public class Program {
+package com.company;
+import com.company.StatePattern.Task;
+
+public class Main {
 
     public static void main(String[] args) {
 
